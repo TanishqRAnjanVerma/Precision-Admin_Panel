@@ -1,0 +1,310 @@
+.navbar {
+    position: relative;
+    padding: 0px;
+    border-bottom: 1.5px solid #a9a9a9;
+
+    .container-fluid {
+        background-color: white;
+        margin: 10px;
+
+
+        .navbar-brand {
+            margin: 0 0 0 50px;
+            padding: 0px;
+        }
+
+        .collapse {
+            .navbar-nav {
+
+                margin: 0 0 0 250px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .nav-item {
+                    position: relative;
+                    margin: 10px;
+
+                    .btn-primary {
+                        color: rgb(0, 0, 0);
+                        background: white;
+                        font-size: 14px;
+                        border: 1px solid rgb(220, 218, 218);
+
+                        &:hover {
+                            color: rgba(11, 79, 255, 1);
+                            border: 1px solid rgba(11, 79, 255, 1);
+                        }
+                    }
+
+
+
+
+
+                    .nav-link {
+                        font-size: 14px;
+
+
+                        .img-fluid {
+                            height: 105px;
+                        }
+
+                        &:hover {
+                            color: rgba(11, 79, 255, 1);
+
+                        }
+                    }
+
+                    .dropdown-menu {
+                        .dropdown-item {
+                            font-size: 14px;
+
+                            &:hover {
+                                background: rgba(11, 79, 255, 1);
+                                color: white;
+                            }
+                        }
+                    }
+
+                    .profile-image {
+                        position: relative;
+                        margin-left: 10px;
+                        margin: 2px;
+                        cursor: pointer;
+                        animation: fadeIn 0.5s;
+
+                        @keyframes fadeIn {
+                            0% {
+                                opacity: 0;
+                            }
+
+                            100% {
+                                opacity: 1;
+                            }
+                        }
+
+                        .profile-icon {
+                            font-size: 22px;
+                        }
+
+                        &:hover {
+                            .nav-profile-dropdown {
+
+                                width: 150px;
+                                display: flex;
+                                flex-direction: column;
+                                /* gap: 0px; */
+                                background-color: white;
+                                padding: 5px 0px 5px 0px;
+                                border-radius: 5px;
+                                border: 1px solid rgb(211, 211, 211);
+                                list-style: none;
+                                margin: 0px -125px 0px 0px;
+
+
+                                .dropdown-sec {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 10px;
+                                    padding: 5px;
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        background: rgba(11, 79, 255, 1);
+                                        color: white;
+                                    }
+
+                                    .drop-icon {
+                                        width: 20px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin: 2px;
+                                    }
+
+                                    .sec-text {
+                                        font-size: 14px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin: 2px;
+                                    }
+                                }
+                            }
+
+                            .line {
+                                margin: 0px;
+                            }
+                        }
+
+                        .nav-profile-dropdown {
+                            position: absolute;
+                            display: none; // Hidden by default
+                            right: 0;
+                            z-index: 1;
+                        }
+                    }
+
+
+
+                }
+
+                .nav-item-cart {
+                    position: relative;
+                    margin: 10px;
+                    place-items: center;
+                    justify-content: center;
+                    margin: 10px;
+                    display: grid;
+
+                    .dot {
+                        min-width: 10px;
+                        min-height: 10px;
+                        background-color: #0b4fff;
+                        border-radius: 10px;
+                        margin: 2px;
+                    }
+                }
+
+                .d-flex {
+                    padding: 10px;
+
+                    .form-control {
+                        font-size: 14px;
+
+                        &:focus {
+                            border: 1px solid rgba(11, 79, 255, 1);
+                            box-shadow: none;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .btn {
+                        border: none;
+                        color: rgba(11, 79, 255, 1);
+
+                        &:hover {
+                            border: none;
+                            background: none;
+                        }
+
+                    }
+                }
+
+
+
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+
+        .container-fluid {
+            .navbar-brand {
+                margin: 0 0 0 10px;
+            }
+
+            .collapse {
+                .navbar-nav {
+                    display: grid;
+                    margin: 0px 0px 0px 10px;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .nav-item {
+                        margin: 10px;
+
+                        .profile-image {
+                            &:hover {
+                                .nav-profile-dropdown {
+                                    margin: -50px 50px 0px 0px;
+                                }
+
+                            }
+
+                        }
+                    }
+
+                    .nav-item-cart {
+                        display: flex;
+                        justify-content: flex-start;
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .navbar {
+        position: relative;
+
+        .container-fluid {
+            .navbar-brand {
+                margin: 0 0 0 30px;
+            }
+
+            .collapse {
+                .navbar-nav {
+                    display: grid;
+                    margin: 0px 0px 0px 30px;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .nav-item {
+                        margin: 10px;
+
+                        .profile-image {
+                            &:hover {
+                                .nav-profile-dropdown {
+                                    margin: -50px 50px 0px 0px;
+                                }
+
+                            }
+
+                        }
+                    }
+
+                    .nav-item-cart {
+                        display: flex;
+                        justify-content: flex-start;
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1239px) {
+    .navbar {
+        position: relative;
+
+        .container-fluid {
+            .navbar-brand {
+                margin: 0 0 0 30px;
+            }
+
+            .collapse {
+                .navbar-nav {
+
+                    margin: 0px 0px 0px 100px;
+
+
+                    .nav-item {
+                        margin: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+}

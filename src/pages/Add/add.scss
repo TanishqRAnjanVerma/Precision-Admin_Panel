@@ -1,0 +1,80 @@
+.add {
+    width: 70%;
+    margin: 50px;
+    color: #6d6d6d;
+
+    .add-form {
+        gap: 20px;
+
+        .add-img-upload {
+            .label-upload {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #6d6d6d;
+                border-style: dotted;
+                padding: 10px;
+                width: 120px;
+                cursor: pointer;
+                background-color: #e0dfdf;
+
+                .upload {
+                    font-size: 20px;
+                    width: 120px;
+                    height: 80px;
+                }
+            }
+        }
+
+        .add-product-name {
+            width: 280px;
+
+            .p-input {
+                padding: 10px;
+            }
+        }
+
+        .add-product-description {
+            width: 280px;
+
+            .d-input {
+                padding: 10px;
+            }
+        }
+
+        .add-category-price {
+            display: flex;
+            gap: 30px;
+
+            .add-category {
+                .select-category {
+                    max-width: 120px;
+                    padding: 10px;
+                }
+            }
+
+            .add-price {
+                .price-input {
+                    max-width: 120px;
+                    padding: 10px;
+                }
+            }
+        }
+
+        .add-btn {
+            max-width: 120px;
+            padding: 10px;
+            border: none;
+            background: rgba(11, 79, 255, 1);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+
+    }
+
+
+
+}
