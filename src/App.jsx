@@ -14,7 +14,7 @@ import AdminBlogList from "./pages/AdminBlogList/AdminBlogList";
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
-  const url = "https://precision-backend.onrender.com/api/blog/list";
+  const url = "https://precision-backend.onrender.com";
 
   return (
     <AdminContextProvider>
